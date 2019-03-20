@@ -6,6 +6,7 @@ job('Grrovy') {
         scm('H/5 * * * *')
     }
     steps {
+        shell("echo hello")
         shell("docker-compose up -d")
     }
 }
